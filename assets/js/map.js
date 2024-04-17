@@ -10,6 +10,7 @@
 class Map {
     constructor(script) {
         this.MAP_CONTAINER = script.parentElement.children[1]
+        this.INFO_CONTAINER = script.parentElement.children[2]
         
         this.isSenate = false; // false for house || true for senate
         this.HOUSE_MAP = null;
@@ -40,14 +41,29 @@ class Map {
         let districts = this.MAP_CONTAINER.querySelector("#svg-districts").children;
 
         for (let i = 0; i < districts.length; i++) {
-          let percent = (i/(districts.length-1))*120;
-          districts[i].style.fill = "hsl("+percent+", 95%, 65%)";
+            let percent = (i/(districts.length-1))*120;
+            districts[i].style.fill = "hsl("+percent+", 100%, 65%)";
+
+            districts[i].addEventListener("mouseenter", (e) => {
+                districts[i].style.fill="hsl("+percent+", 100%, 75%)";
+                districts[i].style.filter="drop-shadow(1px 1px 5px #000)";
+                this.UpdateInfoCard(i);
+            })
+
+            districts[i].addEventListener("mouseout", (e) => {
+                districts[i].style.fill="hsl("+percent+", 100%, 65%)";
+                districts[i].style.filter="";
+            })
         }
     }
 
     Toggle() {
         this.isSenate = !this.isSenate
         this.DrawMap()
+    }
+
+    UpdateInfoCard(districtNum) {
+        this.INFO_CONTAINER.innerHTML = "District " + (districtNum + 1)
     }
 }
 
