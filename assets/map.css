@@ -1,14 +1,13 @@
 .map-items-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     border: 1px solid black;
 }
 
 #map-bounding-box {
     min-width: 10ch;
-    margin-left: 5ch;
 }
 
 #map-info-panel {
