@@ -56,15 +56,15 @@
     text-shadow: #fff 2.5px 1.5px 0px;
 
     background-image: repeating-linear-gradient(45deg, #86a6cf 0ch, #9db4d2 2ch, #c2d5ed 2ch, #c2d5ed 2.2ch, #fff0 2.2ch, #fff0 3ch);
-    background-repeat:repeat-x;
+    /* background-repeat:repeat-x;
     background-size: 200% 100%;
-    animation: ButtonAnimation 90s linear infinite;
+    animation: ButtonAnimation 90s linear infinite; */
 }
 
-@keyframes ButtonAnimation {
+/* @keyframes ButtonAnimation {
     0%{background-position:100% 50%}
     100%{background-position: 0% 50%}
-}
+} */
 
 .district-button-container > *.active > * {
     background-color: #fff5;
