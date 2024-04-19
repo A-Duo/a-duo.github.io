@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Utah Legislative Map"
+date:   2024-04-15 14:10:11 -0600
+categories: infographic
+tags:
+ - utahlegislativemap2024
+---
+
+<div class="map-container">
+  <script src="{% link assets/js/map.js %}" type="text/javascript"></script>
+  <div class="district-button-container">
+    <div id="house-button" class="active"><h3>House</h3></div>
+    <div id="senate-button"><h3>Senate</h3></div>
+  </div>
+  <div class="map-items-container">
+    <div id="map-bounding-box"></div>
+    <div id="map-info-panel">Please click a district.</div>
+  </div>
+</div>
+
+WIP display for map support by district
