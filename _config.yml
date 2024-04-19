@@ -18,11 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Temp Magazine Title
+title: Outlier
 email: herathgabriel@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  WIP Magazine site, still needs a description.
-  Change this later.
+  A magazine covering those pushed to the margins by legislation in the beehive state.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
