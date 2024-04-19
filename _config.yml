@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Outlier
+title: Outlier Magazine
 email: herathgabriel@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A magazine covering those pushed to the margins by legislation in the beehive state.
