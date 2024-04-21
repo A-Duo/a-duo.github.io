@@ -87,16 +87,16 @@ class Map {
 
             let approved = curDistrict['yea'].length
             let total = approved + curDistrict['nay'].length
-            let percent = ((total-approved)/total)*120; // hue
-            // let percent = ((total-approved)/total)*100; // sat
+            // let percent = ((total-approved)/total)*120; // hue
+            let percent = ((total-approved)/total)*100; // sat
 
-            let baseColor = "hsl("+percent+", 100%, 65%)";
-            // let baseColor = "hsl(" + (this.isSenate ? "335" : "190") + ", "+ percent +"%, 65%)";
+            // let baseColor = "hsl("+percent+", 100%, 65%)";
+            let baseColor = "hsl(" + (this.isSenate ? "335" : "190") + ", "+ percent +"%, 65%)";
             elm.style.fill = baseColor
 
             elm.addEventListener("mouseenter", (e) => {
-                elm.style.fill="hsl("+percent+", 100%, 75%)";
-                // elm.style.fill = "hsl(" + (this.isSenate ? "335" : "190") + ", "+ percent +"%, 75%)";
+                // elm.style.fill="hsl("+percent+", 100%, 75%)";
+                elm.style.fill = "hsl(" + (this.isSenate ? "335" : "190") + ", "+ percent +"%, 75%)";
             })
 
             elm.addEventListener("mouseout", (e) => {
@@ -142,7 +142,7 @@ class Map {
         let DATA = this.DISTRICT_DATA[this.GetChamber()][districtNum]
 
         let content = '<h1>District ' + (districtNum + 1)+'</h1><img src="'+DATA["imgUrl"]+'" style="width:106px;height:144px;border-radius:1.5ch; border:3px solid #ccc">'
-        content += '<div><div class="fa-solid fa-user-tie" style="margin:1ch 0 2ch 0"></div> '+DATA["name"]+'</div>'
+        content += '<a href="' + (this.isSenate ? 'https://senate.utah.gov/sen/' : 'https://house.utleg.gov/rep/') + DATA['imgUrl'].match(/\/([^\/]*)\.[^\.]*$/)[1] +'/"><div class="fa-solid fa-user-tie" style="margin:1ch 0 2ch 0"></div> '+DATA["name"]+'</a>'
 
         content += '<div class="mid-lined" style="--color:#333;width:100%" style="margin:0"><b>Legislative Action</b></div>'
         // content += '<div style="border: 0 solid #666; border-left: 3px">'

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Utah Legislative Map"
+title:  "Utah Anti-Trans Legislative Map"
 date:   2024-04-15 14:10:11 -0600
 categories: infographic
 tags:
@@ -19,4 +19,4 @@ tags:
   </div>
 </div>
 
-WIP display for map support by district
+WIP display for map support by district, brighter districts are more trans friendly.
