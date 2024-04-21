@@ -11,8 +11,9 @@
 }
 
 #map-info-panel {
-    width: 100%;
-    max-width: 20ch;
+    width: fit-content;
+    min-width: 20ch;
+    max-width: calc(95% - 5ch);
     margin: 1ch 0 1ch 0;
     padding: 2ch;
 
@@ -56,7 +57,7 @@
 .district-button-container > *.active {
     text-shadow: #fff 2.5px 1.5px 0px;
 
-    background-image: repeating-linear-gradient(45deg, #86a6cf 0ch, #9db4d2 2ch, #c2d5ed 2ch, #c2d5ed 2.2ch, #fff0 2.2ch, #fff0 3ch);
+    background-image: repeating-linear-gradient(45deg, #86a6cf 0ch, #dfe9f7 2ch, #c2d5ed 2ch, #c2d5ed 2.2ch, #fff0 2.2ch, #fff0 3ch);
     /* background-repeat:repeat-x;
     background-size: 200% 100%;
     animation: ButtonAnimation 90s linear infinite; */
@@ -73,5 +74,5 @@
 }
 
 .district-button-container > *:hover {
-    background-color: #eee;
+    background-color: #9992;
 }
