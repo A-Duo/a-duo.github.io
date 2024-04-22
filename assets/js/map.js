@@ -90,7 +90,7 @@ class LegMap {
                 }
 
                 this.VOTE_CHART = new Chart(this.VOTE_CHART_CANVAS, {
-                    type: 'line',
+                    type: 'bar',
                     data: {
                         labels: [],
                         datasets: [{
