@@ -17,6 +17,8 @@ tags:
   <div class="map-items-container">
     <div id="map-bounding-box"></div>
     <div id="map-info-panel">Please click a district.</div>
+    <div id="legislative-action-container" style="width:95%">
+    </div>
     <div style="width:95%">
       <div class="mid-lined">
         <b style="white-space:break-spaces;width:160%;text-align:center">% of votes opposing anti-trans legislation sorted by population density.</b>

@@ -1,0 +1,14 @@
+---
+layout: legislative-partial
+title:  "What is House Bill 257?"
+---
+
+A broad law that restricts:
+ - The ability for people to use changing rooms in publicly owned facilities that don't align with their sex assigned at birth.
+ - Breaking this requirement may be met with up to 6 months in jail and a $1,000 fine.
+ - The ablity for students to use bathrooms, changing rooms, and other "sex-designated" facilities that don't align with their sex assigned at birth.
+ - Breaking this requirement may lead to disciniplinary action at the school's discretion.
+ - Public schools similarly may not force those of differing sex to compete.
+ - Breaking these rules will incur a fine of up to $10,000 per day after a 30 day grace period.
+
+You can read more on this bill from [our criticism of it here](/opinion/2024/04/17/hb-257).

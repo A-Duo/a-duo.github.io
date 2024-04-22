@@ -1,0 +1,14 @@
+<div class="popup-container">
+    <div class="popup-box">
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+
+        <div class="post-content e-content" itemprop="articleBody">
+            {{ content }}
+        </div>
+
+        <div>
+            {% assign url = page.slug | split: 'H' %}
+            <h2><a href="https://le.utah.gov/~{{ url[0] }}/bills/static/H{{ url[1] }}.html" target="_blank"><div class="fa-solid fa-scroll"></div>View the bill.</a></h2>
+        </div>
+    </div>
+</div>

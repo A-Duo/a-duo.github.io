@@ -14,6 +14,7 @@ class LegMap {
 
         this.MAP_CONTAINER = script.parentElement.querySelector("#map-bounding-box");
         this.INFO_CONTAINER = script.parentElement.querySelector("#map-info-panel");
+        this.LEGISLATIVE_ACTION_CONTAINER = script.parentElement.querySelector("#legislative-action-container");
         this.VOTE_CHART_CANVAS = script.parentElement.querySelector("#vote-chart");
 
         this.EMPTY_INFO_PANEL_CONTENT = this.INFO_CONTAINER.innerHTML;
@@ -63,8 +64,6 @@ class LegMap {
                     }
                 }
 
-                console.log(this.DISTRICT_DATA)
-
                 for (let chamber of CHAMBERS) {
                     let chamber_data = this.DISTRICT_DATA[chamber];
                     let temp_data = [];
@@ -74,8 +73,6 @@ class LegMap {
                         temp_data.push([district['area'], i, (district.nay.length/(district.yea.length + district.nay.length)) * 100]);
                     }
                     temp_data = temp_data.sort((a, b) => b[0] - a[0])
-                    
-                    console.log(temp_data)
 
 
                     let labels = []
@@ -165,6 +162,7 @@ class LegMap {
 
             elm.addEventListener("click", (e) => {
                 this.UpdateInfoCard(i);
+                this.UpdateLegislativeInfo(i);
             })
         }
     }
@@ -186,6 +184,7 @@ class LegMap {
         
         this.DrawMap();
         this.INFO_CONTAINER.innerHTML = this.EMPTY_INFO_PANEL_CONTENT;
+        this.LEGISLATIVE_ACTION_CONTAINER.innerHTML = '';
     }
 
     ChamberButtonClicked(isSenateButton) {
@@ -218,6 +217,46 @@ class LegMap {
         // content += '</ul>'
 
         this.INFO_CONTAINER.innerHTML = content
+    }
+
+    UpdateLegislativeInfo(districtNum) {
+        let DATA = this.DISTRICT_DATA[this.GetChamber()][districtNum]
+
+        let content = ''
+
+        for (let type of [['nay', 'Opposed', '#2cb52c', '100ms'], ['yea', 'Supported', '#d64242', '500ms'], ['abs', 'Absent', '#888', '900ms']]) {
+            content += '<div class="unveil" style="--delay: '+ type[3] +'">'
+            content += '<div class="mid-lined" style="--color: '+ type[2] +'"><b>Anti-Trans Bills ' + type[1] + '</b></div>'
+            content += '<ul>'
+            for (let bill of DATA[type[0]]) {
+                content += '<li billId="'+ this.BILL_DATA[bill].info.replace('/', '') +'" class="fake-link">' + this.BILL_DATA[bill].title + '</li>'
+            }
+            content += '</ul></div>'
+        }
+
+        this.LEGISLATIVE_ACTION_CONTAINER.innerHTML = content;
+
+        for (let elm of this.LEGISLATIVE_ACTION_CONTAINER.querySelectorAll('li')) {
+            elm.addEventListener("click", (e) => {this.LoadBillPopup(elm.getAttribute('billId'))})
+        }
+    }
+
+    LoadBillPopup(id) {
+        fetch('/partials/'+id+'.html').then(response => response.text()).then(response => {
+            if (response.slice(0, 2) != '<!') {
+                let popup = document.getElementById('popupElm');
+                popup.innerHTML = response;
+
+                document.body.style.overflowY = 'hidden';
+                let container = popup.querySelector('.popup-container')
+                container.addEventListener('click', (e) => {if (e.target == container) {this.ClosePopup()}});
+            }
+        });
+    }
+
+    ClosePopup() {
+        document.getElementById('popupElm').innerHTML = '';
+        document.body.style.overflowY = '';
     }
 }
 
