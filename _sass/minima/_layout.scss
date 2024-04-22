@@ -18,9 +18,12 @@
   margin-bottom: 0;
   float: left;
 
+  filter: drop-shadow(2px 3px 2px #9996);
+
   &,
   &:visited {
-    color: $text-color
+    color: #fafafa
+    // color: $text-color
     // color: $grey-color-dark;
   }
 }
