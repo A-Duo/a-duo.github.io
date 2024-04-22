@@ -19,7 +19,7 @@ tags:
     <div id="map-info-panel">Please click a district.</div>
     <div style="width:95%">
       <div class="mid-lined">
-        <b>% of votes opposing anti-trans legislation sorted by population density.</b>
+        <b style="white-space:break-spaces;width:160%;text-align:center">% of votes opposing anti-trans legislation sorted by population density.</b>
       </div>
       <canvas id="vote-chart"></canvas>
     </div>
