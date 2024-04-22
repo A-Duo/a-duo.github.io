@@ -7,13 +7,14 @@
 //     SCRIPT.nextElementSibling.innerHTML = await GetData("/assets/misc/utah-house-map.html")
 // }
 
-class Map {
+class LegMap {
     constructor(script) {
-        this.MAP_CONTAINER = script.parentElement.querySelector("#map-bounding-box");
-        this.INFO_CONTAINER = script.parentElement.querySelector("#map-info-panel");
-        
         this.HOUSE_BUTTON = script.parentElement.querySelector("#house-button");
         this.SENATE_BUTTON = script.parentElement.querySelector("#senate-button");
+
+        this.MAP_CONTAINER = script.parentElement.querySelector("#map-bounding-box");
+        this.INFO_CONTAINER = script.parentElement.querySelector("#map-info-panel");
+        this.VOTE_CHART_CANVAS = script.parentElement.querySelector("#vote-chart");
 
         this.EMPTY_INFO_PANEL_CONTENT = this.INFO_CONTAINER.innerHTML;
         
@@ -23,6 +24,8 @@ class Map {
         this.BILL_DATA = null
         this.HOUSE_MAP = null;
         this.SENATE_MAP = null;
+        this.VOTE_CHART = null;
+        this.VOTE_CHART_DATA = {'house': null, 'senate': null};
 
         this.init()
     }
@@ -59,6 +62,53 @@ class Map {
                         }
                     }
                 }
+
+                console.log(this.DISTRICT_DATA)
+
+                for (let chamber of CHAMBERS) {
+                    let chamber_data = this.DISTRICT_DATA[chamber];
+                    let temp_data = [];
+                    for (let i = 0; i < chamber_data.length; i++) {
+                        let district = chamber_data[i];
+
+                        temp_data.push([district['area'], i, (district.nay.length/(district.yea.length + district.nay.length)) * 100]);
+                    }
+                    temp_data = temp_data.sort((a, b) => b[0] - a[0])
+                    
+                    console.log(temp_data)
+
+
+                    let labels = []
+                    let data = []
+
+                    for (let i = 0; i < chamber_data.length; i++) {
+                        labels.push('District #' + (temp_data[i][1] + 1))
+                        data.push(temp_data[i][2])
+                    }
+
+                    this.VOTE_CHART_DATA[chamber] = {labels: labels, data: data}
+                }
+
+                this.VOTE_CHART = new Chart(this.VOTE_CHART_CANVAS, {
+                    type: 'bar',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: '% of Votes Pro-Trans',
+                            data: [],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                        y: {
+                            suggestedMax: 100,
+                            beginAtZero: true
+                        }
+                        }
+                    }
+                    });
+
                 fetch("/assets/misc/utah-house-map.html").then(response => response.text()).then(response => {
                     this.HOUSE_MAP = response;
                     this.DrawMap();
@@ -75,9 +125,19 @@ class Map {
     DrawMap() {
         if (this.isSenate) {
             this.MAP_CONTAINER.innerHTML = this.SENATE_MAP;
+            this.VOTE_CHART.data.datasets[0].backgroundColor = getComputedStyle(document.body).getPropertyValue('--brand-color-secondary');
+            this.VOTE_CHART.data.datasets[0].borderColor = getComputedStyle(document.body).getPropertyValue('--brand-color-secondary-dark');
         } else {
             this.MAP_CONTAINER.innerHTML = this.HOUSE_MAP;
+            this.VOTE_CHART.data.datasets[0].backgroundColor = getComputedStyle(document.body).getPropertyValue('--brand-color-primary');
+            this.VOTE_CHART.data.datasets[0].borderColor = getComputedStyle(document.body).getPropertyValue('--brand-color-primary-dark');
         }
+         
+        let voteData = this.VOTE_CHART_DATA[this.GetChamber()]
+        this.VOTE_CHART.data.labels = voteData.labels;
+        this.VOTE_CHART.data.datasets[0].data = voteData.data;
+        this.VOTE_CHART.update();
+
 
         let districts = this.MAP_CONTAINER.querySelector("#svg-districts").children;
 
@@ -163,7 +223,7 @@ class Map {
 
 let script = document.currentScript
 window.addEventListener('load', function () {
-    let map = new Map(script);
+    let map = new LegMap(script);
 
     // console.log(SCRIPT.parentElement.children[1]);
 })
