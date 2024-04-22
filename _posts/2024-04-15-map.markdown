@@ -10,8 +10,8 @@ tags:
 <div class="map-container">
   <script src="{% link assets/js/map.js %}" type="text/javascript"></script>
   <div class="district-button-container">
-    <div id="house-button" style = "filter: hue-rotate(-20deg) contrast(1.25)" class="active"><h3><div class="fa-solid fa-landmark"></div> House</h3></div>
-    <div id="senate-button" style="filter: hue-rotate(105deg) contrast(1.25)"><h3><div class="fa-solid fa-landmark-dome"></div> Senate</h3></div>
+    <div id="house-button" class="active"><h3><div class="fa-solid fa-landmark"></div> House</h3></div>
+    <div id="senate-button"><h3><div class="fa-solid fa-landmark-dome"></div> Senate</h3></div>
   </div>
   <div class="map-items-container">
     <div id="map-bounding-box"></div>

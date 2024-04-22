@@ -1,9 +1,25 @@
+.district-button-container #house-button {
+    filter: hue-rotate(-20deg) contrast(1.25)
+}
+:root.dark .district-button-container #house-button {
+    filter: hue-rotate(-20deg)
+}
+
+.district-button-container #senate-button {
+    filter: hue-rotate(105deg) contrast(1.25)
+}
+:root.dark .district-button-container #senate-button {
+    filter: hue-rotate(105deg)
+}
+
+
+
 .map-items-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    border: 1px solid black;
+    border: 1px solid var(--text-color-secondary);
 }
 
 #map-bounding-box {
@@ -17,7 +33,7 @@
     margin: 1ch 0 1ch 0;
     padding: 2ch;
 
-    border: 1px solid black;
+    border: 1px solid var(--text-color-secondary);
 
     display: flex;
     flex-direction: column;
@@ -36,12 +52,11 @@
     width:calc(50% - 0.5ch);
     text-align: center;
 
-    border: 1px solid black;
+    border: 1px solid var(--text-color-secondary);
     border-bottom-width: 0;
     border-top-left-radius: 1.5ch;
     border-top-right-radius: 1.5ch;
 
-    color: #000;
     font-weight: bold;
 
     cursor: pointer;
@@ -68,7 +83,7 @@
 }
 
 .district-button-container > *.active {
-    text-shadow: #fff 2.5px 1.5px 0px;
+    text-shadow: var(--bg-color-primary) 2.5px 1.5px 0px;
 
     background-image: repeating-linear-gradient(45deg, #86a6cf 0ch, #dfe9f7 2ch, #c2d5ed 2ch, #c2d5ed 2.2ch, #fff0 2.2ch, #fff0 3ch);
     /* background-repeat:repeat-x;

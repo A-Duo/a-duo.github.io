@@ -144,7 +144,7 @@ class Map {
         let content = '<h1>District ' + (districtNum + 1)+'</h1><img src="'+DATA["imgUrl"]+'" style="width:106px;height:144px;border-radius:1.5ch; border:3px solid #ccc">'
         content += '<a href="' + (this.isSenate ? 'https://senate.utah.gov/sen/' : 'https://house.utleg.gov/rep/') + DATA['imgUrl'].match(/\/([^\/]*)\.[^\.]*$/)[1] +'/" target="_blank"><div class="fa-solid fa-user-tie" style="margin:1ch 0 2ch 0"></div> '+DATA["name"]+'</a>'
 
-        content += '<div class="mid-lined" style="--color:#333;width:100%" style="margin:0"><b>Legislative Action</b></div>'
+        content += '<div class="mid-lined" style="--color:#ccc;width:100%" style="margin:0"><b>Legislative Action</b></div>'
         // content += '<div style="border: 0 solid #666; border-left: 3px">'
         content += '<div class="alternating-table"><div class="table-body">'
         content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-unbalanced table-data" style="color:#2cb52c"><span class="tooltip-text">Opposed</span></div><div class="icon-table-row table-data" style="text-align:center">' + DATA['nay'].length + '</div></div>'

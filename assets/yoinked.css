@@ -1,6 +1,79 @@
-/* Added to fix tooltip font */
-:root{
-  --primary-font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+/* Light mode dark mode stuff*/
+
+:root, :root.light{
+  --primary-font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  --text-color-primary: #111;
+  --text-color-secondary: #222;
+  --bg-color-primary: #fafafa;
+
+  --brand-color-primary: #79d5e0;
+  --brand-color-primary-dark: #449aa3;
+  --brand-color-secondary: #ffc0cb;
+  --brand-color-secondary-dark: #ee94a3;
+}
+
+.site-footer {
+  background-color: #9992;
+  border-top: 1px solid #9993;
+}
+
+.site-header {
+  background-color: #9992;
+  border-bottom: 1px solid #9993;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color-primary: #fafafa;
+    --text-color-secondary: #ddd;
+    --bg-color-primary: #222;
+  }
+}
+
+:root.dark {
+  --text-color-primary: #fafafa;
+  --text-color-secondary: #ddd;
+  --bg-color-primary: #222;
+}
+
+#theme-button {
+  cursor: pointer;
+
+  display: inline-block;
+  width: 5ch;
+  height: 2ch;
+  border-radius: 1ch;
+  margin: 0 2ch -0.4ch 0;
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow: inset 0px 3px #6667;
+  background: #6662;
+}
+
+#theme-button::after {
+  content:"";
+  width: 1.8ch;
+  height: 1.8ch;
+  border-radius: 1.8ch;
+
+  position: absolute;
+  top:0;
+  left:0;
+
+  background: var(--brand-color-secondary);
+  box-shadow: -1px 2px 0 var(--brand-color-secondary-dark);
+  transform: translateX(calc(5ch - 1.8ch));
+  transition: 0.3s;
+}
+
+:root.dark #theme-button::after {
+  background: var(--brand-color-primary);
+  box-shadow: 1px 2px 0 var(--brand-color-primary-dark);
+  transform: translateX(0ch);
+  transition: 0.3s;
 }
 
 /* CSS Styling I nabbed from a previous project I did*/
@@ -381,15 +454,15 @@
   /* .alternating-table tr:hover, .alternating-table [style*="display: table-row"]:not([style*="display: table-row-group"]):hover, .alternating-table [style*="display:table-row"]:not([style*="display:table-row-group"]):hover { */
   /* .alternating-table tr:hover, .alternating-table .table-row:hover, .static-alternating-table tr:hover, .static-alternating-table .table-row:hover { */
   .alternating-table .table-row:hover, [class^="static-alternating-table"] .table-body .table-row:hover, [class*=" static-alternating-table"] .table-body .table-row:hover {
-    background-color: #00000009;
+    background-color: #6662;
   }
   
   /* .alternating-table tbody:nth-child(even), .alternating-table [style*="display: table-row-group"]:nth-child(even), .alternating-table [style*="display:table-row-group"]:nth-child(even) { */
   /* .alternating-table tbody:nth-child(even), .alternating-table .table-body:nth-child(even) {
     background-color: #00000010;
   } */
-  .tb-odd, .static-alternating-table tbody:nth-child(odd), .static-alternating-table .table-body:nth-child(odd), .static-alternating-table-even .table-body:nth-child(even) {
-    background-color: #00000010;
+  .tb-odd, .static-alternating-table tbody > *:nth-child(odd), .static-alternating-table .table-body > *:nth-child(odd), .static-alternating-table-even .table-body > *:nth-child(even) {
+    background-color: #6661;
   }
   
   
