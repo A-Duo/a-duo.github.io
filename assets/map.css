@@ -1,8 +1,25 @@
+.district-button-container > * {
+    overflow: hidden;
+}
+
 .district-button-container #house-button {
     filter: hue-rotate(-20deg) contrast(1.25)
 }
 :root.dark .district-button-container #house-button {
     filter: hue-rotate(-20deg)
+}
+:root.dark .district-button-container > * > *::before {
+    content:"";
+    z-index: -1;
+    position: absolute;
+    
+    width:100%;
+    height:100%;
+
+    top: 0;
+    left: 0;
+    
+    background: #0004;
 }
 
 .district-button-container #senate-button {
