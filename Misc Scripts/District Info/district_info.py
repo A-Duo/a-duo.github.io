@@ -15,7 +15,7 @@ with open(CUR_PATH / LEGISLATOR_INFO_PATH, 'r') as f:
         temp = {}
 
         temp["name"] = data["house"][i]["formatName"]
-        temp["imgUrl"] = data["house"][i]["image"]
+        temp["id"] = data["house"][i]["id"]
 
         info["house"].append(temp)
 
@@ -23,7 +23,7 @@ with open(CUR_PATH / LEGISLATOR_INFO_PATH, 'r') as f:
         temp = {}
 
         temp["name"] = data["senate"][i]["formatName"]
-        temp["imgUrl"] = data["senate"][i]["image"]
+        temp["id"] = data["senate"][i]["id"]
 
         info["senate"].append(temp)
 
