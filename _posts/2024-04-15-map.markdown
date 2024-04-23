@@ -28,4 +28,6 @@ tags:
   </div>
 </div>
 
+{% post_url /partials/2024HB0257 %}
+
 WIP display for map support by district, brighter districts are more trans friendly.
