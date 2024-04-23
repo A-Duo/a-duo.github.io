@@ -1,5 +1,5 @@
 ---
-layout: legislative-partial
+layout: partial
 title:  "What is House Bill 303?"
 ---
 

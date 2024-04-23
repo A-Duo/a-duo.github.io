@@ -37,12 +37,12 @@ collections:
     output: true
     permalink: /:collection/:name
 
-defaults:
-  -
-    scope:
-      paths: "partials/" # an empty string here means all files in the project
-    values:
-      layout: "legislative-partial"
+# defaults:
+#   -
+#     scope:
+#       paths: "/partials/" # an empty string here means all files in the project
+#     values:
+#       layout: "legislative-partial"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

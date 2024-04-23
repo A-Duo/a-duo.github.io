@@ -242,7 +242,7 @@ class LegMap {
     }
 
     LoadBillPopup(id) {
-        fetch('/partials/'+id+'.html').then(response => response.text()).then(response => {
+        fetch('/partials/'+id.toLowerCase()+'.html').then(response => response.text()).then(response => {
             if (response.slice(0, 2) != '<!') {
                 let popup = document.getElementById('popupElm');
                 popup.innerHTML = response;
