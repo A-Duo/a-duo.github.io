@@ -82,6 +82,12 @@
     align-items: center;
 }
 
+#map-info-panel img {
+    height: 144px;
+    border-radius: 1.5ch;
+    border: 3px solid #ccc
+}
+
 .district-button-container {
     width: 100%;
     display: flex;
