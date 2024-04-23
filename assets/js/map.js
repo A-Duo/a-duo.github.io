@@ -11,6 +11,7 @@ class LegMap {
     constructor(script) {
         this.HOUSE_BUTTON = script.parentElement.querySelector("#house-button");
         this.SENATE_BUTTON = script.parentElement.querySelector("#senate-button");
+        this.ZOOM_BUTTON = script.parentElement.querySelector("#map-zoom-button");
 
         this.MAP_CONTAINER = script.parentElement.querySelector("#map-bounding-box");
         this.INFO_CONTAINER = script.parentElement.querySelector("#map-info-panel");
@@ -20,6 +21,9 @@ class LegMap {
         this.EMPTY_INFO_PANEL_CONTENT = this.INFO_CONTAINER.innerHTML;
         
         this.isSenate = false; // false for house || true for senate
+        this.isZoomedIn = false;
+
+        this.ZOOM_DATA = [['476 1140 1005 1280', '760 1290 300 390'], ['450 1117 1005 1280', '730 1275 300 390']]
 
         this.DISTRICT_DATA = null;
         this.BILL_DATA = null
@@ -115,8 +119,9 @@ class LegMap {
 
         fetch("/assets/misc/utah-senate-map.html").then(response => response.text()).then(response => {this.SENATE_MAP = response})
 
-        this.HOUSE_BUTTON.addEventListener("click", (e) => {this.ChamberButtonClicked(false)})
-        this.SENATE_BUTTON.addEventListener("click", (e) => {this.ChamberButtonClicked(true)})
+        this.HOUSE_BUTTON.addEventListener("click", (e) => this.ChamberButtonClicked(false));
+        this.SENATE_BUTTON.addEventListener("click", (e) => this.ChamberButtonClicked(true));
+        this.ZOOM_BUTTON.addEventListener("click", e => this.ToggleZoomLevel());
     }
 
     DrawMap() {
@@ -167,6 +172,10 @@ class LegMap {
                 this.UpdateLegislativeInfo(i);
             })
         }
+
+        if (this.isZoomedIn) {
+            this.MAP_CONTAINER.querySelector('#map').setAttribute('viewBox', this.ZOOM_DATA[this.isSenate ? 0 : 1][1])
+        }
     }
 
     Toggle() {
@@ -193,6 +202,18 @@ class LegMap {
         if (isSenateButton != this.isSenate) {
             this.Toggle()
         }
+    }
+
+    ToggleZoomLevel () {
+        this.ZOOM_BUTTON.textContent = (this.isZoomedIn ? '' : '')
+
+        gsap.to(this.MAP_CONTAINER.querySelector('#map'), {
+            duration: 1,
+            attr: { viewBox: this.ZOOM_DATA[this.isSenate ? 0 : 1][this.isZoomedIn ? 0 : 1] },
+            ease: "power3.inOut"
+        });
+
+        this.isZoomedIn = !this.isZoomedIn;
     }
 
     GetChamber() {
