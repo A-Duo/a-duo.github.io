@@ -97,7 +97,8 @@
 
 .unveil {
   --delay: 600ms;
-  animation: show 1300ms var(--delay) cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+  --duration: 1300ms;
+  animation: show var(--duration) var(--delay) cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
 
   opacity: 0;
 
@@ -118,25 +119,30 @@
   margin: 5rem calc(25% - 10rem);
   
   background-color: var(--bg-color-primary);
+  position:relative;
 }
 
-.fake-link {
+.close-button {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  padding:0.4ch 1ch;
+
+  border-radius: 1ch;
+
+  color: var(--text-color-primary)
+}
+
+.close-button:hover {
   cursor: pointer;
-  color: #2a7ae2;
+  background-color: #6665;
 }
 
-.fake-link:hover {
-  color: var(--text-color-primary);
-  text-decoration: underline;
+.close-button::before {
+  content: '\f00d';
+  font: var(--fa-font-solid);
 }
-
-.fake-link::after {
-  content: ' \f08e';
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
-  font-size: small;
-}
-
 
 /* CSS Styling I nabbed from a previous project I did*/
 

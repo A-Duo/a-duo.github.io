@@ -150,6 +150,8 @@ class LegMap {
             // let baseColor = "hsl("+percent+", 100%, 65%)";
             let baseColor = "hsl(" + (this.isSenate ? "335" : "190") + ", "+ percent +"%, 65%)";
             elm.style.fill = baseColor
+            
+            elm.style.setProperty('--delay', Math.floor((i / (districts.length - 1)) * 500) + "ms")
 
             elm.addEventListener("mouseenter", (e) => {
                 // elm.style.fill="hsl("+percent+", 100%, 75%)";
@@ -206,9 +208,9 @@ class LegMap {
         content += '<div class="mid-lined" style="--color:#ccc;width:100%" style="margin:0"><b>Legislative Action</b></div>'
         // content += '<div style="border: 0 solid #666; border-left: 3px">'
         content += '<div class="alternating-table"><div class="table-body">'
-        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-unbalanced table-data" style="color:#2cb52c"><span class="tooltip-text">Opposed</span></div><div class="icon-table-row table-data" style="text-align:center">' + DATA['nay'].length + '</div></div>'
-        content += '<div class="table-row tooltip-hover tb-odd"><div class="tooltip-anchor fa-solid fa-scale-unbalanced-flip table-data" style="color:#d64242"><span class="tooltip-text">Supported</span></div><div class="icon-table-row table-data" style="text-align:center">' + DATA['yea'].length + '</div></div>'
-        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-balanced table-data" style="color:#888"><span class="tooltip-text">Abstained</span></div><div class="icon-table-row table-data" style="text-align:center">' + DATA['abs'].length + '</div></div>'
+        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-unbalanced table-data" style="color:#2cb52c"><span class="tooltip-text">Opposed</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 0ms">' + DATA['nay'].length + '</div></div>'
+        content += '<div class="table-row tooltip-hover tb-odd"><div class="tooltip-anchor fa-solid fa-scale-unbalanced-flip table-data" style="color:#d64242"><span class="tooltip-text">Supported</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 200ms">' + DATA['yea'].length + '</div></div>'
+        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-balanced table-data" style="color:#888"><span class="tooltip-text">Abstained</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 400ms">' + DATA['abs'].length + '</div></div>'
         content += '</div></div>'
         // content += '<p>Supported</p><ul>'
         // for (let id of DATA['yea']) {
@@ -249,7 +251,9 @@ class LegMap {
 
                 document.body.style.overflowY = 'hidden';
                 let container = popup.querySelector('.popup-container')
+
                 container.addEventListener('click', (e) => {if (e.target == container) {this.ClosePopup()}});
+                popup.querySelector('.close-button').addEventListener('click', (e) => {this.ClosePopup()});
             }
         });
     }

@@ -104,3 +104,35 @@
 .district-button-container > *:hover {
     background-color: #9992;
 }
+
+#map path {
+    cursor: pointer;
+    
+    --delay: 600ms;
+    animation: show 1300ms var(--delay) cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+    opacity: 0;
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fake-link {
+    cursor: pointer;
+    color: #2a7ae2;
+}
+
+.fake-link:hover {
+    color: var(--text-color-primary);
+    text-decoration: underline;
+}
+
+.fake-link::after {
+    content: ' \f08e';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: small;
+}
