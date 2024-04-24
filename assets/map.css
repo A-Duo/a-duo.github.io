@@ -82,10 +82,31 @@
     align-items: center;
 }
 
+#map-info-panel h1 {
+    margin: -1ch 0 0 0;
+}
+
 #map-info-panel img {
-    height: 144px;
+    /* height: 144px; */
+    width:17ch;
+    height: calc(17ch / 0.8);
     border-radius: 1.5ch;
-    border: 3px solid #ccc
+    border: 3px solid #ccc;
+
+    text-align: center;
+    font: var(--fa-font-solid);
+    line-height: calc(17ch / 0.8);
+}
+
+/* #map-info-panel a {
+    margin-left: 1ch;
+} */
+
+#map-info-panel a::before {
+    content: '\f508';
+    font: var(--fa-font-solid);
+
+    padding-right: 0.5ch;
 }
 
 .district-button-container {

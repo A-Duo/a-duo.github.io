@@ -3,4 +3,10 @@ layout: partial
 title:  "What is House Bill 329?"
 ---
 
-eeee
+House bill 329 was a bill that required that sufficient notice be provided to parents so they can avoid any "Event with an adult theme."
+
+An "event with an adult theme" is any event that:
+- Contains content that may not be appropriate for children.
+- Takes place in a public building or on public grounds.
+
+-- Write the rest at home.

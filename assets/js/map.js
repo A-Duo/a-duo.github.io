@@ -224,8 +224,8 @@ class LegMap {
     UpdateInfoCard(districtNum) {
         let DATA = this.DISTRICT_DATA[this.GetChamber()][districtNum]
 
-        let content = '<h1>District ' + (districtNum + 1)+'</h1><img src="/assets/images/legislators/'+DATA.id+'.jpg">'
-        content += '<a href="' + (this.isSenate ? 'https://senate.utah.gov/sen/' : 'https://house.utleg.gov/rep/') + DATA.id + '/" target="_blank"><div class="fa-solid fa-user-tie" style="margin:1ch 0 2ch 0"></div> '+DATA["name"]+'</a>'
+        let content = '<h1>District ' + (districtNum + 1)+'</h1><img alt="" src="/assets/images/legislators/'+DATA.id+'.jpg">'
+        content += '<a href="' + (this.isSenate ? 'https://senate.utah.gov/sen/' : 'https://house.utleg.gov/rep/') + DATA.id + '/" target="_blank">'+DATA["name"]+'</a>'
 
         content += '<div class="mid-lined" style="--color:#ccc;width:100%" style="margin:0"><b>Legislative Action</b></div>'
         // content += '<div style="border: 0 solid #666; border-left: 3px">'

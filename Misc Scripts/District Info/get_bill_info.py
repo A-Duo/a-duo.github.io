@@ -6,13 +6,15 @@ import json
 
 BILL_LIST = [
     #2024
+    #'2024HB0157', # Not sure on this one, listen to the hearings later.
     #'2024HB0253', #no vote
     '2024/HB0257',
     '2024/HB0261',
     '2024/HB0303',
     '2024/HB0316', #prettier formatting: https://le.utah.gov/~2024/bills/hbillenr/HB0316.pdf
-    # '2024HCR018', #supported
-    # '2024HB0527' #no vote
+    #'2024HCR018', #supported
+    #'2024HB0527', #no vote
+    #'2024SB0150', Law makers did a good thing <3 https://www.ksl.com/article/50886545/utah-passes-religious-freedom-bill-with-language-to-prevent-anti-lgbtq-discrimination https://twitter.com/EqualityUtah/status/1760843275907527047
 
     #2023
     #'2023HB0132', #failed in committee
