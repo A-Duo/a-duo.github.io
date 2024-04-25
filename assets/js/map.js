@@ -23,7 +23,7 @@ class LegMap {
         this.isSenate = false; // false for house || true for senate
         this.isZoomedIn = false;
 
-        this.ZOOM_DATA = [['476 1140 1005 1280', '760 1290 300 390'], ['450 1117 1005 1280', '730 1275 300 390']]
+        this.ZOOM_DATA = [['476 1125 1005 1310', '760 1290 300 390'], ['450 1100 1005 1310', '730 1275 300 390']]
 
         this.DISTRICT_DATA = null;
         this.BILL_DATA = null

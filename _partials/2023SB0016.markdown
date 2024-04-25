@@ -1,0 +1,11 @@
+---
+layout: partial
+title:  "What is Senate Bill 16?"
+---
+
+This bill placed an indefinite ban on all hormone treatment for minors including blockers.
+
+Line 245:
+"A health care provider may not provide a hormonal transgender treatment to a patient who is a minor...not diagnosed with gender dysphoria before the effective date of this bill."
+
+This bill was signed into law and went into effect on the 28th of January 2023.

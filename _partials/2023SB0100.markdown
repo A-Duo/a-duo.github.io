@@ -1,0 +1,13 @@
+---
+layout: partial
+title:  "What is Senate Bill 100?"
+---
+
+This bill ensures that students in public schools cannot have their educational recommended to align with their gender identity without parental consent.
+
+Critics argue that this may reveal transgender students status as being transgender who attempt to use documentaiton of their education when getting a job.
+
+Line 44:
+"Notwithstanding any other provision of law, a school or LEA may not...without written parental consent make changes to a student's education record regarding a student's gender identity that does not conform with the student's sex."
+
+This bill was signed into law and went into effect on the 16th of February 2023.

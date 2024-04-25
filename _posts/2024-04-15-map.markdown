@@ -32,4 +32,4 @@ tags:
   </div>
 </div>
 
-WIP display for map support by district, brighter districts are more trans friendly.
+Grey districts voted in favor of anti-trans legislation while colored districts voted in opposition.

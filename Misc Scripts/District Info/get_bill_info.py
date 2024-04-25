@@ -12,6 +12,7 @@ BILL_LIST = [
     '2024/HB0261',
     '2024/HB0303',
     '2024/HB0316', #prettier formatting: https://le.utah.gov/~2024/bills/hbillenr/HB0316.pdf
+    #'2024/HB0424', #Same sponsors as HB329 in 2023, the votes against correlate with anti-trans legislation but I wouldn't fight this on the grounds of being anti trans, nor does any major organization seem to do so. Only concerning text is line 62 which is incredibly vague, you commit lewdness by "performing any other act of lewness."
     #'2024HCR018', #supported
     #'2024HB0527', #no vote
     #'2024SB0150', Law makers did a good thing <3 https://www.ksl.com/article/50886545/utah-passes-religious-freedom-bill-with-language-to-prevent-anti-lgbtq-discrimination https://twitter.com/EqualityUtah/status/1760843275907527047

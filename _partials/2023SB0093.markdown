@@ -1,0 +1,14 @@
+---
+layout: partial
+title:  "What is Senate Bill 93?"
+---
+
+Senate bill 93 is a bll that bans minors under fifteen getting their birth certificate changed for gender affirmation and requires parental consent for those under 18.
+
+Line 229:
+"A court may not grant a petition for a sex designation change if:
+- The birth certificate is for a child who is younger than 15 years and six months old.
+- The child's parent or guardian with legal custody has not given permission."
+
+
+This bill was signed into law and went into effect on the 23rd of March 2023.
