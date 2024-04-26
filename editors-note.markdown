@@ -1,0 +1,20 @@
+---
+layout: page
+title: Editor's Note
+permalink: /editors-note/
+---
+Recently, both in the state of Utah and across the nation people have been backsliding on the rights of the LGBTQ community. At a time when open acceptance seemed just around the corner the divide grew much larger. This shift is what this magazine focuses on. Specifically trans people who are more visible than ever before have been targeted. 
+
+Lawmakers have capitalized on their precarious position in our society and are using them to fuel their bases. Putting on a public display of ridicule for what they couldn't understand. Transgender people have been othered. Even in the laws directly targeting them are talked about as if they're an after thought. When House Bill 257 banned them from changing rooms it was said to only target sex criminals, when Senate Bill 16 banned hormonal treatment it was just so the scientific community could catch up, and when House Bill 11 banned trans-girls from competing in school sports it was just to protect their fellow teammates. They're considered outliers, statistically insignificant, and not worthy of consideration.
+
+[Representative Kera Birkeland, primary sponsor for HB257 and HB11, stated](), "I get really tired of hearing that we're targeting people. And then we expect them to feel like we're not targeting [them]. We try to show kindness and compassion, and then we're told, 'but you're rejecting them.' We're not." Rep. Birkeland said this in her statement supporting House Bill 303. A rejected bill that would have banned pride flags and a number of other symbols in public school classrooms. It's laughable that politicians who enact legislation which harms LGBTQ folk claim to have their best interest at heart.
+
+This magazine chooses to focus on those who've been pushed to the margins by these recent policies. If politicians choose to push trans people to the sides then it's our duty as citizens to ensure that their voices are heard, and rights protected.
+
+If you or someone you know is trans or part of the LGBTQ community, this magazine focuses on highlighting how policy makers have treated you, and how to fight back. Be it on the scale of one person or a million, slowly pushing the boulder will wake it roll. It's the goal of this magazine that by informing you the reader that you will be better equipped to fight for trans people, or at least no why others do.
+
+No person deserves to be an outlier, our policy makers may not have to listen on an individual scale but with enough mouths they eventually will. Currently trans rights in Utah are in an uncertain place. The majority of our districts in both the house and senate have voted in favor of atleast 80% of the bills that negatively impact trans people. But there is hope. Utah prides itself as being a morally righteous and compassionate place. When Utah State School Board Natalie Cline led to the harassment of a girl's basketball team member under the suspicion of being trans we passed HCR 18. This resolution passed with overwhelming support and marked the first time the legislature has censured a state school board member. 
+
+When Utahns feel people are being treated unfairly they'll come out in droves to support them. It's the hope of this magazine that it not only provides you with resources to fight for trans rights but to let others see why trans people need to be protected. 
+
+If you have anything you'd like to recommend for a future article, or data you feel should be explained please send it me here: herathgabriel@gmail.com

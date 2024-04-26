@@ -8,7 +8,7 @@ layout: default
     <!-- <img style="width:20ch;margin-left: calc(25% - 10ch)" src="assets/Outlier Logo.png"> -->
     <img style="width:20ch;margin-bottom:1ch" src="assets/Outlier Logo.png">
     <div style="border-radius:1ch;padding:1rem;box-shadow:#6663 1px 1px 7px">
-      <h2 style="font-style:italic;font-weight:bolder;text-shadow:#8884 1px 2px 1px;">Welcome!</h2>
+      <h2 style="font-weight:bolder;text-shadow:#aaa4 1px 2px 2px;">Welcome!</h2>
       <p style="color:var(--text-color-secondary)">This is a magazine covering those pushed to the margins in the beehive state.</p>
     </div>
   </div>
@@ -19,42 +19,6 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <div class="mid-lined">
-      <b style="font-size: 1.1rem">Recent articles</b>
-    </div>
-    <div class="post-list">
-      {%- for post in site.posts -%}
-      <div>
-        <div>
-          <div class="post-info">
-            {%- for tag in post.categories -%}
-              <span class="post-meta"><b>{{ tag | upcase }}</b></span>
-            {%- endfor -%}
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-          </div>
-          <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h2>
-          <div class="post-description">
-            {%- if post.description -%}
-              {{ post.description }}
-            {%- endif -%}
-          </div>
-        </div>
-        {%- if post.preview_image -%}
-          <a class="post-image-link" href="{{ post.url | relative_url }}">
-            <img src="/assets/images/{{ post.preview_image }}">
-          </a>
-        {%- endif -%}
-      </div>
-      {%- endfor -%}
-    </div>
-    
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  {%- include feed.html -%}
 
 </div>
