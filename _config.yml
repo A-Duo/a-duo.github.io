@@ -38,6 +38,7 @@ collections:
     permalink: /:collection/:name
 
 header_pages:
+- articles.markdown
 - editors-note.markdown
 - citations.markdown
 - about.markdown

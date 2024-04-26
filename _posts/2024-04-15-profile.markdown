@@ -7,6 +7,12 @@ preview_image: "brittney-nystrom.jpg"
 description: "With the onslaught of legislation on LGBTQ rights across the nation, a strong defender is desperately needed. Find out who's steering the ship at the ACLU of Utah and fighting for you in the background."
 ---
 
+<!-- This is a really gross hack, do not ever do this. I have no time !-->
+<div style="margin:-1ch 1.5rem 0 -1ch;float:left">
+    <img src="/assets/images/brittney-nystrom.jpg">
+    <p style="margin:0 0 0 2rem;font-size:1.5ch;color:#888;font-style:italic">Photo from ACLU of Utah</p>
+</div>
+
 Dressed in comfortable, yet professional clothes and with short, frizzy hair often kept up in a slightly messy bun, Brittney Nystrom gives off the impression of a woman used to working long hours with hardly a second to spare. And while many people may be strapped for time, the reason she’s so busy is what truly sets her apart. Because as the current Executive Director of the ACLU of Utah, Brittney Nystrom has been a staunch advocate for the rights of those around her for nearly two decades. She has been across the country testifying and leading policy advocating for other’s rights and fighting for their freedoms as an expert on immigration. And since 2016 Mrs. Nystrom has been back home in her birth state of Utah to ensure the fair treatment of those living here as well.
 
 [In an interview done by the *Standard Examiner*](https://www.standard.net/news/2016/aug/18/south-ogden-native-tapped-to-lead-aclu-of-utah/) Mrs. Nystrom recalled that her journey truly began while volunteering for the AmeriCorps in Wisconsin. “At that time, welfare reform was all the rage, and I was in a community of low-income African-American moms," she stated. "What really struck me were the barriers to success facing that community. A lot of my clients would apply for a job, get hired and then terminated due to an old criminal conviction on their record. That was my first exposure to the obstacles people face in just trying to survive.” Her experience there deeply resonated with her, leading her to go through law school so she could combat the injustices she saw firsthand. This decision led to more than a decade of policy and advocacy work specifically to benefit immigrants and refugees who shared some of the struggles she witnessed firsthand.
