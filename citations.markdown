@@ -16,8 +16,10 @@ permalink: /citations/
 - “Gender Dysphoria.” Diagnostic and Statistical Manual of Mental Disorders: DSM-5-TR, American Psychiatric Association Publishing, Washington, DC, 2022, pp. 512–512. 
 - “House - 2024 General Session - Day 4.” Utah State Legislature, [le.utah.gov/av/floorArchive.jsp?markerID=124516](le.utah.gov/av/floorArchive.jsp?markerID=124516). Accessed 17th Apr. 2024. 
 - James, Sandy E., et al. “The Report of the 2015 US Transgender Survey.” National Center for Transgender Equality, Dec. 2016, [transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf](transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf). 
+- Kirzinger, Ashley, et al. “KFF/The Washington Post Trans Survey.” KFF, Mar. 2022, files.[kff.org/attachment/REPORT-KFF-The-Washington-Post-Trans-Survey.pdf](kff.org/attachment/REPORT-KFF-The-Washington-Post-Trans-Survey.pdf). 
 - Stern, Emily Anderson. “‘Is This Ever Going to Change?’: Trans Teens Ask Utah Legislature Not to Pass More Restrictions.” The Salt Lake Tribune, 18 Jan. 2024, [www.sltrib.com/news/politics/2024/01/18/transgender-teens-tell-lawmakers/](www.sltrib.com/news/politics/2024/01/18/transgender-teens-tell-lawmakers/). 
 - Williams, Troy, et al. “Our Response to Natalie Cline’s Bullying of a High School Student.” Twitter, Equality Utah, 7 Feb. 2024, [twitter.com/EqualityUtah/status/1755348886200422411](twitter.com/EqualityUtah/status/1755348886200422411). 
+- Wright, Jason D., et al. “National Estimates of Gender-Affirming Surgery in the US.” JAMA Network Open, JAMA Network, 23 Aug. 2023, [jamanetwork.com/journals/jamanetworkopen/fullarticle/2808707](jamanetwork.com/journals/jamanetworkopen/fullarticle/2808707). 
 
 ## [Brittney Nystrom, an advocate for Utahns](/profile/2024/04/15/profile.html)
 - FAQ on HB 11 and our legal complaint. ACLU of Utah. (2022, June 6). [https://www.acluutah.org/en/cases/faq-hb-11](https://www.acluutah.org/en/cases/faq-hb-11)

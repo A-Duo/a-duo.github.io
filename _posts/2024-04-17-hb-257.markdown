@@ -22,9 +22,9 @@ Among the representatives on the house floor some champion the bill. They argue 
 
 <div class="section-header">The bill's controversy</div>
 
-H.B. 257's call to fame has been owed to it's label by critics as a "bathroom bill." A category of legislation aimed at restricting what facilities transgender people have access to, especially public restrooms. Beyond the initial restriction on bathrooms, this bill originally required that any individual who entered a "sex-designated privacy space" must have a birth certificate with a gender marker matching the space, if the marker was amended then documentation of a "primary sex characteristic surgical procedure" is necessary as well. These "sex-designated privacy spaces" would include restrooms, changing rooms, as well as crisis centers for rape, domestic abuse, and emergency shelters. If these rules were broken and it's determined that a reasonable person would take offense to the defendant's presence then they would be sentenced to criminal trespass, a class B misdemeanor carrying up to 6 months in prison and a fine of $1,000. 
+H.B. 257's call to fame has been owed to its label by critics as a "bathroom bill." A category of legislation aimed at restricting what facilities transgender people have access to, especially public restrooms. Beyond the initial restriction on bathrooms, this bill originally required that any individual who entered a "sex-designated privacy space" must have a birth certificate with a gender marker matching the space, if the marker was amended then documentation of a "primary sex characteristic surgical procedure" is necessary as well. These "sex-designated privacy spaces" would include restrooms, changing rooms, as well as crisis centers for rape, domestic abuse, and emergency shelters. If these rules were broken and it's determined that a reasonable person would take offense to the defendant's presence then they would be sentenced to criminal trespass, a class B misdemeanor carrying up to 6 months in prison and a fine of $1,000. 
 
-The bill in it's final form now only carries criminal penalties for changing rooms in any partially government owned facility such as those in public colleges or public recreation centers.
+The bill in its final form now only carries criminal penalties for changing rooms in any partially government owned facility such as those in public colleges or public recreation centers.
 
 With the restrictions on bathrooms and crisis centers removed, lawmakers implicitly agree that it was not strictly necessary to impose these restrictions. As representative Brian King said in [his statement opposing the bill,](https://le.utah.gov/av/videoClip.jsp?meetingType=floor&stream=https://stream1.utleg.gov/vodhouse/smil:rHVID_156_011924_01.smil/playlist.m3u8&offset=5622&endTime=5878) "Things like voyeurism. Things like, lewdness, public indecency, sexual assault. Those are already crimes, they're on the books." So why is it that changing rooms are considered any different? If the individual in question hasn't caused any direct harm to another person then why should they be given a criminal court case leading to potential prison time.
 
@@ -106,11 +106,13 @@ Utah state legislature is certainly better than Oklahoma in the sense that it pr
 
 Bills such as H.B. 257 cannot be accepted in our country, and they absolutely cannot be accepted in Utah. 
 
-<div clas="mid-line" style="padding:2rem 0"></div>
+<div class="mid-line" style="margin:2rem 0"></div>
 
 ## Works Cited
 - “Gender Dysphoria.” Diagnostic and Statistical Manual of Mental Disorders: DSM-5-TR, American Psychiatric Association Publishing, Washington, DC, 2022, pp. 512–512. 
 - “House - 2024 General Session - Day 4.” Utah State Legislature, [le.utah.gov/av/floorArchive.jsp?markerID=124516](le.utah.gov/av/floorArchive.jsp?markerID=124516). Accessed 17th Apr. 2024. 
-- James, Sandy E., et al. “The Report of the 2015 US Transgender Survey.” National Center for Transgender Equality, Dec. 2016, [transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf](transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf). 
+- James, Sandy E., et al. “The Report of the 2015 US Transgender Survey.” National Center for Transgender Equality, Dec. 2016, [transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf](transequality.org/sites/default/files/docs/usts/USTS-Full-Report-Dec17.pdf).
+- Kirzinger, Ashley, et al. “KFF/The Washington Post Trans Survey.” KFF, Mar. 2022, files.[kff.org/attachment/REPORT-KFF-The-Washington-Post-Trans-Survey.pdf](kff.org/attachment/REPORT-KFF-The-Washington-Post-Trans-Survey.pdf).  
 - Stern, Emily Anderson. “‘Is This Ever Going to Change?’: Trans Teens Ask Utah Legislature Not to Pass More Restrictions.” The Salt Lake Tribune, 18 Jan. 2024, [www.sltrib.com/news/politics/2024/01/18/transgender-teens-tell-lawmakers/](www.sltrib.com/news/politics/2024/01/18/transgender-teens-tell-lawmakers/). 
 - Williams, Troy, et al. “Our Response to Natalie Cline’s Bullying of a High School Student.” Twitter, Equality Utah, 7 Feb. 2024, [twitter.com/EqualityUtah/status/1755348886200422411](twitter.com/EqualityUtah/status/1755348886200422411). 
+- Wright, Jason D., et al. “National Estimates of Gender-Affirming Surgery in the US.” JAMA Network Open, JAMA Network, 23 Aug. 2023, [jamanetwork.com/journals/jamanetworkopen/fullarticle/2808707](jamanetwork.com/journals/jamanetworkopen/fullarticle/2808707). 
