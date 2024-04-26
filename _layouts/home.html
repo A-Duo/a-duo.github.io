@@ -4,7 +4,14 @@ layout: default
 
 <div class="home">
 
-  <img style="width:20ch;margin-left: calc(50% - 10ch)" src="assets/Outlier Logo.png">
+  <div style="display:flex;flex-direction:row;justify-content:space-around;flex-wrap:wrap-reverse;padding: 0rem 1rem 2rem 1rem">
+    <!-- <img style="width:20ch;margin-left: calc(25% - 10ch)" src="assets/Outlier Logo.png"> -->
+    <img style="width:20ch;margin-bottom:1ch" src="assets/Outlier Logo.png">
+    <div style="border-radius:1ch;padding:1rem;box-shadow:#6663 1px 1px 7px">
+      <h2 style="font-style:italic;font-weight:bolder;text-shadow:#8884 1px 2px 1px;">Welcome!</h2>
+      <p style="color:var(--text-color-secondary)">This is a magazine covering those pushed to the margins in the beehive state.</p>
+    </div>
+  </div>
 
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>

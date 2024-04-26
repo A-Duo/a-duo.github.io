@@ -4,7 +4,7 @@
   --primary-font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   
   --text-color-primary: #111;
-  --text-color-secondary: #222;
+  --text-color-secondary: #444;
   --bg-color-primary: #fafafa;
 
   --brand-color-primary: #79d5e0;
@@ -111,6 +111,8 @@
   /* flex-wrap: wrap-reverse; */
 
   box-shadow: #6663 1px 1px 7px;
+
+  overflow: clip; /* Fix posts formatting later. */
 }
 
 .post-list > * > * {
@@ -129,6 +131,12 @@
 
 .post-list > * > div {
   max-width: calc(100% - 16rem);
+}
+
+.post-info {
+  width: fit-content;
+  border-bottom: 2px solid #0000;
+  border-image: linear-gradient(90deg, var(--brand-color-primary-dark) 0%, var(--brand-color-primary) 10%, var(--brand-color-primary) 45%, var(--brand-color-secondary) 55%, var(--brand-color-secondary) 80%, var(--brand-color-secondary-dark) 100%) 30;
 }
 
 .post-meta {
