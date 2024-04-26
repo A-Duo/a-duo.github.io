@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <!-- <img style="width:20ch;margin-left: calc(50% - 10ch)" src="assets/Outlier Logo.svg"> -->
+  <img style="width:20ch;margin-left: calc(50% - 10ch)" src="assets/Outlier Logo.png">
 
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -13,19 +13,35 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class=>{{ page.list_title | default: "Posts" }}</h2>
+    <div class="mid-lined">
+      <b style="font-size: 1.1rem">Recent articles</b>
+    </div>
     <div class="post-list">
       {%- for post in site.posts -%}
       <div>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+        <div>
+          <div class="post-info">
+            {%- for tag in post.categories -%}
+              <span class="post-meta"><b>{{ tag | upcase }}</b></span>
+            {%- endfor -%}
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+          </div>
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h2>
+          <div class="post-description">
+            {%- if post.description -%}
+              {{ post.description }}
+            {%- endif -%}
+          </div>
+        </div>
+        {%- if post.preview_image -%}
+          <a class="post-image-link" href="{{ post.url | relative_url }}">
+            <img src="/assets/images/{{ post.preview_image }}">
           </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
         {%- endif -%}
       </div>
       {%- endfor -%}

@@ -38,7 +38,6 @@ class LegMap {
     async init() {
         fetch("/assets/misc/utah-district-info.json").then(response => response.json()).then(response => {
             this.DISTRICT_DATA = response;
-            console.log(response);
             fetch("/assets/misc/utah-bills.json").then(response => response.json()).then(data => {
                 this.BILL_DATA = data
 
@@ -98,7 +97,8 @@ class LegMap {
                         datasets: [{
                             label: '% of Votes Pro-Trans',
                             data: [],
-                            borderWidth: 1
+                            borderWidth: 1,
+                            minBarLength: 3
                         }]
                     },
                     options: {
@@ -150,6 +150,11 @@ class LegMap {
 
             let approved = curDistrict['yea'].length
             let total = approved + curDistrict['nay'].length
+            // if (total == 0) {
+            //     console.log('----------------')
+            //     console.log('Warning! District had no oppionated votes.')
+            //     console.log(curDistrict)
+            // }
             // let percent = ((total-approved)/total)*120; // hue
             let percent = ((total-approved)/total)*100; // sat
 

@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Utah Anti-Trans Legislative Map"
-date:   2024-04-15 14:10:11 -0600
+date:   2024-04-25 14:10:11 -0600
 categories: infographic
 tags:
  - utahlegislativemap2024
+preview_image: "utah-map.png"
+description: "An interactive map showcasing which districts are opposing anti-trans legsilation. Clicking on a district will give a list of their legislative actions and why we oppose the the bills they voted for."
 ---
 
 <div class="map-container">

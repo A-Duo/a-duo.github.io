@@ -3,6 +3,8 @@ layout: post
 title:  "An argument against Utah's recent \"Equality Bill\" (H.B. 257)"
 date:   2024-04-17 14:10:11 -0600
 categories: opinion
+preview_image: "bathroom.jpg"
+description: "House Bill 257 passed this legislative session and was met with substantial outcry from the LGBTQ community. But even with the concessions made, why might one still oppose it? Why is \"the most middle of the road\" bill of it's kind, still so hated?"
 ---
 
 January 19th, 2024, only four days into Utah’s legislative session and the halls of the Utah State Capitol were already struggling. After more than 9 months since the last time they convened, the state legislature was already strapped for time in their blisteringly short 45 day session. Stuck at the heart of this is the current bill on the agenda, House Bill 257, “Sex-based Designations for Privacy, Anti-bullying, and Women's Opportunities.” Among the representatives on the house floor some champion the bill for its potential to ensure equal accommodations in public school activities for men and women, as well as argue it brings peace of mind to survivors of sexual abuse. Others on the floor decry it for bringing undue scrutiny and potential criminal punishment to transgender people in their daily life. With the house divided and one representative left in tears after finishing her statement; Representative Kera Birkeland, the primary sponsor for H.B. 257, was given the final opportunity to speak before her bill was taken to a vote.
