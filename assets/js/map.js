@@ -230,11 +230,11 @@ class LegMap {
 
         content += '<div class="mid-lined" style="--color:#ccc;width:100%" style="margin:0"><b>Legislative Action</b></div>'
         // content += '<div style="border: 0 solid #666; border-left: 3px">'
-        content += '<div class="alternating-table"><div class="table-body">'
-        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-unbalanced table-data" style="color:#2cb52c"><span class="tooltip-text">Opposed</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 0ms">' + DATA['nay'].length + '</div></div>'
-        content += '<div class="table-row tooltip-hover tb-odd"><div class="tooltip-anchor fa-solid fa-scale-unbalanced-flip table-data" style="color:#d64242"><span class="tooltip-text">Supported</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 200ms">' + DATA['yea'].length + '</div></div>'
-        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-balanced table-data" style="color:#888"><span class="tooltip-text">Abstained</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 400ms">' + DATA['abs'].length + '</div></div>'
-        content += '</div></div>'
+        content += '<div class="static-alternating-table">'
+        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-unbalanced table-data" style="color:#2cb52c;margin-left:5px"><span class="tooltip-text">Opposed</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 0ms">' + DATA['nay'].length + '</div></div>'
+        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-unbalanced-flip table-data" style="color:#d64242;margin-left:5px"><span class="tooltip-text">Supported</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 200ms">' + DATA['yea'].length + '</div></div>'
+        content += '<div class="table-row tooltip-hover"><div class="tooltip-anchor fa-solid fa-scale-balanced table-data" style="color:#888;margin-left:5px"><span class="tooltip-text">Abstained</span></div><div class="icon-table-row table-data unveil" style="text-align:center; --delay: 400ms">' + DATA['abs'].length + '</div></div>'
+        content += '</div>'
         // content += '<p>Supported</p><ul>'
         // for (let id of DATA['yea']) {
         //     content += '<li>' + this.BILL_DATA[id]['title'] + '</li>'
@@ -254,7 +254,7 @@ class LegMap {
             content += '<div class="mid-lined" style="--color: '+ type[2] +'"><b>Anti-Trans Bills ' + type[1] + '</b></div>'
             content += '<ul>'
             for (let bill of DATA[type[0]]) {
-                content += '<li billId="'+ this.BILL_DATA[bill].info.replace('/', '') +'" class="fake-link">' + this.BILL_DATA[bill].title + '</li>'
+                content += '<li billId="'+ this.BILL_DATA[bill].info.replace('/', '-') +'" class="fake-link">' + this.BILL_DATA[bill].title + '</li>'
             }
             content += '</ul></div>'
         }

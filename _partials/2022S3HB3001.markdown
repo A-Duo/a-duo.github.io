@@ -1,6 +1,0 @@
----
-layout: partial
-title:  "What is House Bill 3001?"
----
-
-House bill 3001 was a special session bill drafted to ensure that people could not be prosecuted for enforcing H.B. 11. It also states that local education associations and schools are required to enforce H.B. 11.

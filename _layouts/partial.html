@@ -2,7 +2,7 @@
     <div class="popup-box unveil" style="--delay: 0ms; --duration: 500ms">
         <div class="close-button"></div>
 
-        {% assign url = page.slug | split: 'H' %}
+        {% assign url = page.slug | split: '-' %}
 
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }} ({{ url[0] }})</h1>
 
