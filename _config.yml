@@ -39,6 +39,7 @@ collections:
 
 header_pages:
 - editors-note.markdown
+- citations.markdown
 - about.markdown
 
 # Exclude from processing.

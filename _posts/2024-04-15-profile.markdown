@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Brittney Nystrom, an advocate for Utahns."
+title:  "Brittney Nystrom, an advocate for Utahns"
 date:   2024-04-15 14:00:11 -0600
 categories: profile
 preview_image: "brittney-nystrom.jpg"
