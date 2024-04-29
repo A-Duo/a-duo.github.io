@@ -91,6 +91,18 @@
   margin: 2rem 0 1rem 0;
 }
 
+.works-cited li a {
+  line-break: anywhere;
+}
+
+.post-content > p {
+  font-size: 2ch;
+}
+
+.post-content > .section-header {
+  font-size: 3ch;
+}
+
 
 .site-title img {
   height: 2ch;
@@ -192,7 +204,9 @@
 .popup-box {
   border-radius: 0.5rem;
   padding: 3rem;
-  margin: 5rem calc(25% - 10rem);
+  margin: 5rem auto;
+  width: calc(90% - 6rem);
+  max-width: 80rem;
   
   background-color: var(--bg-color-primary);
   position:relative;

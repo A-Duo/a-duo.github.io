@@ -32,8 +32,10 @@ While Brittney Nystrom may have had a long journey getting here to Utah moving f
 <div class="mid-line" style="margin:2rem 0"></div>
 
 ## Works Cited
+<div class="works-cited" markdown="1">
 - FAQ on HB 11 and our legal complaint. ACLU of Utah. (2022, June 6). [https://www.acluutah.org/en/cases/faq-hb-11](https://www.acluutah.org/en/cases/faq-hb-11)
 - Mckitrick, C. (2016, August 18). South Ogden native tapped to lead ACLU of Utah. standard.net. [https://www.standard.net/news/2016/aug/18/south-ogden-native-tapped-to-lead-aclu-of-utah/](https://www.standard.net/news/2016/aug/18/south-ogden-native-tapped-to-lead-aclu-of-utah/)
 - Mills, G. (2022, February 26). The ACLU of Utah on the final week of the legislative session. ABC4 Utah. [https://www.abc4.com/news/local-news/the-aclu-of-utah-on-the-final-week-of-the-legislative-session/](https://www.abc4.com/news/local-news/the-aclu-of-utah-on-the-final-week-of-the-legislative-session/)
 - Nystrom, B. (2024, January 30). VETO letter to governor Cox on H.B. 257. ACL 	U of Utah. [https://www.acluutah.org/en/press/veto-letter-governor-cox-hb-257](https://www.acluutah.org/en/press/veto-letter-governor-cox-hb-257)
 - (2023, June 6). For the first time ever, Human Rights Campaign officially declares “state of emergency” for LGBTQ+ Americans; Issues National Warning and guidebook to ensure safety for LGBTQ+ residents and travelers. Human Rights Campaign. [https://www.hrc.org/press-releases/for-the-first-time-ever-human-rights-campaign-officially-declares-state-of-emergency-for-lgbtq-americans-issues-national-warning-and-guidebook-to-ensure-safety-for-lgbtq-residents-and-travelers](https://www.hrc.org/press-releases/for-the-first-time-ever-human-rights-campaign-officially-declares-state-of-emergency-for-lgbtq-americans-issues-national-warning-and-guidebook-to-ensure-safety-for-lgbtq-residents-and-travelers)
+</div>
